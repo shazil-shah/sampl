@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hotel | Gourmet Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <section id="hero">
+        <h1 class="typing-text">Welcome to Your Hotel</h1>
+    </section>
+
+    <section id="question-sec" class="hidden">
+        <h2 class="animate-pop">What are you willing to eat today?</h2>
+        <div class="category-container">
+            <button onclick="showMenu('meal')">Proper Meal</button>
+            <button onclick="showMenu('dessert')">Dessert</button>
+            <button onclick="showMenu('snacks')">Light Snacks</button>
+        </div>
+    </section>
+
+    <section id="menu-display" class="hidden">
+        <button class="back-btn" onclick="goBack()">← Back</button>
+        <div id="items-grid" class="grid-3d"></div>
+    </section>
+
+    <footer>
+        <p>📍 Your Given Address, Nankana Sahib</p>
+        <p>📧 <a href="mailto:nanakanasahibpak@gmail.com">nanakanasahibpak@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
